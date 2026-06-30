@@ -1,27 +1,41 @@
 let data = [];
+let filteredData = [];
+const RENDER_LIMIT = 300;
 
 document.addEventListener("DOMContentLoaded", () => {
-    console.log("Figurine Doppie avviato");
-
     Papa.parse("catalogo.csv", {
         download: true,
         header: true,
+        skipEmptyLines: true,
         complete: function(results) {
             data = results.data;
-            renderTable(data);
+            filteredData = data;
+            renderTable(filteredData);
         }
     });
 
-    document.getElementById("search").addEventListener("input", (e) => {
-        const value = e.target.value.toLowerCase();
+    const searchInput = document.getElementById("search");
 
-        const filtered = data.filter(row =>
-            Object.values(row).some(v =>
-                (v || "").toString().toLowerCase().includes(value)
-            )
-        );
+    let timeout;
+    searchInput.addEventListener("input", (e) => {
+        clearTimeout(timeout);
 
-        renderTable(filtered);
+        timeout = setTimeout(() => {
+            const value = e.target.value.toLowerCase().trim();
+
+            if (value.length < 2) {
+                filteredData = data;
+            } else {
+                filteredData = data.filter(row =>
+                    (row.Soggetto || "").toLowerCase().includes(value) ||
+                    (row.Squadra || "").toLowerCase().includes(value) ||
+                    (row.Collezione || "").toLowerCase().includes(value) ||
+                    (row.Numero || "").toString().toLowerCase().includes(value)
+                );
+            }
+
+            renderTable(filteredData);
+        }, 150);
     });
 });
 
@@ -29,7 +43,9 @@ function renderTable(rows) {
     const tbody = document.querySelector("#table tbody");
     tbody.innerHTML = "";
 
-    rows.forEach(row => {
+    const fragment = document.createDocumentFragment();
+
+    rows.slice(0, RENDER_LIMIT).forEach(row => {
         if (!row.ID) return;
 
         const tr = document.createElement("tr");
@@ -44,6 +60,8 @@ function renderTable(rows) {
             <td>${row.Condizione || ""}</td>
         `;
 
-        tbody.appendChild(tr);
+        fragment.appendChild(tr);
     });
+
+    tbody.appendChild(fragment);
 }
