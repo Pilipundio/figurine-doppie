@@ -81,13 +81,18 @@ function renderTable(rows) {
         const tr = document.createElement("tr");
 
         tr.innerHTML = `
+            <td>${row.ID || ""}</td>
+            <td>${row.Gruppo || ""}</td>
+            <td>${row.Collezione || ""}</td>
+            <td>${row.Editore || ""}</td>
+            <td>${row.Anno || ""}</td>
+            <td>${row.Tipologia || ""}</td>
+            <td>${row.Numero || ""}</td>
             <td>${row.Soggetto || ""}</td>
             <td>${row.Squadra || ""}</td>
-            <td>${row.Collezione || ""}</td>
-            <td>${row.Anno || ""}</td>
-            <td>${row.Numero || ""}</td>
-            <td>${row.Quantità || ""}</td>
             <td>${row.Condizione || ""}</td>
+            <td>${row.Quantità || ""}</td>
+            <td>${row.Note || ""}</td>
         `;
 
         tbody.appendChild(tr);
