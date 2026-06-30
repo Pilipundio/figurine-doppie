@@ -93,6 +93,7 @@ function renderTable(rows) {
             <td>${row.Numero || ""}</td>
             <td>${row.Soggetto || ""}</td>
             <td>${row.Squadra || ""}</td>
+            <td>${row.Rarità || ""}</td>
             <td>${row.Condizione || ""}</td>
             <td>${row.Quantità || ""}</td>
             <td>${row.Note || ""}</td>
