@@ -1,5 +1,6 @@
 let data = [];
 let filteredData = [];
+let currentSort = { key: null, direction: 1 };
 const RENDER_LIMIT = 400;
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -16,9 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             buildFilters(data);
             renderTable(filteredData);
-        },
-        error: function(err) {
-            console.error("ERRORE CSV:", err);
+            attachSorting();
         }
     });
 
@@ -93,37 +92,84 @@ function fillSelect(id, values) {
     });
 }
 
+function attachSorting() {
+    const headers = document.querySelectorAll("th");
+
+    headers.forEach((th, index) => {
+        th.style.cursor = "pointer";
+
+        th.addEventListener("click", () => {
+            const keys = [
+                "ID",
+                "Gruppo",
+                "Collezione",
+                "Editore",
+                "Anno",
+                "Tipologia",
+                "Numero",
+                "Soggetto",
+                "Squadra",
+                "Condizione",
+                "Quantità",
+                "Note",
+                "Rarità"
+            ];
+
+            const key = keys[index];
+            if (!key) return;
+
+            if (currentSort.key === key) {
+                currentSort.direction *= -1;
+            } else {
+                currentSort.key = key;
+                currentSort.direction = 1;
+            }
+
+            sortData(key, currentSort.direction);
+            renderTable(filteredData);
+        });
+    });
+}
+
+function sortData(key, direction) {
+    filteredData.sort((a, b) => {
+        const valA = (a[key] || "").toString();
+        const valB = (b[key] || "").toString();
+
+        const numA = parseFloat(valA);
+        const numB = parseFloat(valB);
+
+        if (!isNaN(numA) && !isNaN(numB)) {
+            return (numA - numB) * direction;
+        }
+
+        return valA.localeCompare(valB) * direction;
+    });
+}
+
 function renderTable(rows) {
     const tbody = document.querySelector("#table tbody");
     tbody.innerHTML = "";
 
-    const slice = rows.slice(0, RENDER_LIMIT);
-
-    const fragment = document.createDocumentFragment();
-
-    for (let i = 0; i < slice.length; i++) {
-        const r = slice[i];
-
+    rows.slice(0, RENDER_LIMIT).forEach(row => {
         const tr = document.createElement("tr");
 
         tr.innerHTML = `
-            <td>${r.ID || ""}</td>
-            <td>${r.Gruppo || ""}</td>
-            <td>${r.Collezione || ""}</td>
-            <td>${r.Editore || ""}</td>
-            <td>${r.Anno || ""}</td>
-            <td>${r.Tipologia || ""}</td>
-            <td>${r.Numero || ""}</td>
-            <td>${r.Soggetto || ""}</td>
-            <td>${r.Squadra || ""}</td>
-            <td>${r.Condizione || ""}</td>
-            <td>${r.Quantità || ""}</td>
-            <td>${r.Note || ""}</td>
-            <td>${r.Rarità || ""}</td>
+            <td>${row.ID || ""}</td>
+            <td>${row.Gruppo || ""}</td>
+            <td>${row.Collezione || ""}</td>
+            <td>${row.Editore || ""}</td>
+            <td>${row.Anno || ""}</td>
+            <td>${row.Tipologia || ""}</td>
+            <td>${row.Numero || ""}</td>
+            <td>${row.Soggetto || ""}</td>
+            <td>${row.Squadra || ""}</td>
+            <td>${row.Condizione || ""}</td>
+            <td>${row.Quantità || ""}</td>
+            <td>${row.Note || ""}</td>
+            <td>${row.Rarità || ""}</td>
         `;
 
-        fragment.appendChild(tr);
-    }
-
-    tbody.appendChild(fragment);
+        tbody.appendChild(tr);
+    });
 }
