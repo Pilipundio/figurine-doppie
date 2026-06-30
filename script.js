@@ -3,62 +3,81 @@ let filteredData = [];
 const RENDER_LIMIT = 300;
 
 document.addEventListener("DOMContentLoaded", () => {
-    const tbody = document.querySelector("#table tbody");
     const searchInput = document.getElementById("search");
+    const colFilter = document.getElementById("filterCollezione");
+    const teamFilter = document.getElementById("filterSquadra");
 
     Papa.parse("catalogo.csv", {
         download: true,
         header: true,
         skipEmptyLines: true,
         complete: function(results) {
-            data = results.data.filter(r => r.ID); // pulizia base
+            data = results.data.filter(r => r.ID);
             filteredData = data;
+
+            populateFilters(data);
             renderTable(filteredData);
-        },
-        error: function(err) {
-            console.error("Errore CSV:", err);
         }
     });
 
-    let timeout;
+    function applyFilters() {
+        const search = searchInput.value.toLowerCase().trim();
+        const col = colFilter.value;
+        const team = teamFilter.value;
 
-    searchInput.addEventListener("input", (e) => {
-        clearTimeout(timeout);
+        filteredData = data.filter(row => {
+            const matchSearch =
+                !search ||
+                (row.Soggetto || "").toLowerCase().includes(search) ||
+                (row.Squadra || "").toLowerCase().includes(search) ||
+                (row.Numero || "").toString().includes(search);
 
-        timeout = setTimeout(() => {
-            const value = e.target.value.toLowerCase().trim();
+            const matchCol = !col || row.Collezione === col;
+            const matchTeam = !team || row.Squadra === team;
 
-            if (value.length < 2) {
-                filteredData = data;
-            } else {
-                filteredData = data.filter(row =>
-                    matchRow(row, value)
-                );
-            }
+            return matchSearch && matchCol && matchTeam;
+        });
 
-            renderTable(filteredData);
-        }, 150);
-    });
+        renderTable(filteredData);
+    }
+
+    searchInput.addEventListener("input", applyFilters);
+    colFilter.addEventListener("change", applyFilters);
+    teamFilter.addEventListener("change", applyFilters);
 });
 
-function matchRow(row, value) {
-    return (
-        (row.Soggetto || "").toLowerCase().includes(value) ||
-        (row.Squadra || "").toLowerCase().includes(value) ||
-        (row.Collezione || "").toLowerCase().includes(value) ||
-        (row.Numero || "").toString().toLowerCase().includes(value) ||
-        (row.Anno || "").toString().includes(value)
-    );
+function populateFilters(data) {
+    const colSet = new Set();
+    const teamSet = new Set();
+
+    data.forEach(r => {
+        if (r.Collezione) colSet.add(r.Collezione);
+        if (r.Squadra) teamSet.add(r.Squadra);
+    });
+
+    const colFilter = document.getElementById("filterCollezione");
+    const teamFilter = document.getElementById("filterSquadra");
+
+    colSet.forEach(c => {
+        const opt = document.createElement("option");
+        opt.value = c;
+        opt.textContent = c;
+        colFilter.appendChild(opt);
+    });
+
+    teamSet.forEach(t => {
+        const opt = document.createElement("option");
+        opt.value = t;
+        opt.textContent = t;
+        teamFilter.appendChild(opt);
+    });
 }
 
 function renderTable(rows) {
     const tbody = document.querySelector("#table tbody");
     tbody.innerHTML = "";
 
-    const slice = rows.slice(0, RENDER_LIMIT);
-    const fragment = document.createDocumentFragment();
-
-    slice.forEach(row => {
+    rows.slice(0, RENDER_LIMIT).forEach(row => {
         const tr = document.createElement("tr");
 
         tr.innerHTML = `
@@ -71,17 +90,6 @@ function renderTable(rows) {
             <td>${row.Condizione || ""}</td>
         `;
 
-        fragment.appendChild(tr);
+        tbody.appendChild(tr);
     });
-
-    tbody.appendChild(fragment);
-
-    // feedback minimo
-    const info = document.createElement("tr");
-    info.innerHTML = `
-        <td colspan="7" style="text-align:center; font-weight:bold; background:#f0f0f0;">
-            Mostrate ${slice.length} / ${rows.length} righe
-        </td>
-    `;
-    tbody.appendChild(info);
 }
