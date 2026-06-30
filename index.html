@@ -10,33 +10,43 @@
 
 <body>
 
-  <header>
-    <h1>Catalogo Figurine</h1>
-  </header>
+<header>
+  <h1>Catalogo Figurine</h1>
+</header>
 
-  <div class="container">
+<div class="container">
 
-    <input id="search" placeholder="Cerca giocatore, squadra, collezione..." />
+  <input id="search" placeholder="Cerca soggetto, squadra, numero..." />
 
-    <table id="table">
-      <thead>
-        <tr>
-          <th>Soggetto</th>
-          <th>Squadra</th>
-          <th>Collezione</th>
-          <th>Anno</th>
-          <th>Numero</th>
-          <th>Quantità</th>
-          <th>Condizione</th>
-        </tr>
-      </thead>
-      <tbody></tbody>
-    </table>
+  <div style="display:flex; gap:10px; margin: 10px 0;">
+    <select id="filterCollezione">
+      <option value="">Tutte le collezioni</option>
+    </select>
 
+    <select id="filterSquadra">
+      <option value="">Tutte le squadre</option>
+    </select>
   </div>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
-  <script src="script.js"></script>
+  <table id="table">
+    <thead>
+      <tr>
+        <th>Soggetto</th>
+        <th>Squadra</th>
+        <th>Collezione</th>
+        <th>Anno</th>
+        <th>Numero</th>
+        <th>Quantità</th>
+        <th>Condizione</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
+<script src="script.js"></script>
 
 </body>
 </html>
