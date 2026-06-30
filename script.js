@@ -11,6 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
         download: true,
         header: true,
         skipEmptyLines: true,
+        transformHeader: h => h.trim(),
         complete: function(results) {
             data = results.data.filter(r => r.ID);
             filteredData = data;
