@@ -1,78 +1,95 @@
 let data = [];
 let filteredData = [];
-const RENDER_LIMIT = 300;
+const RENDER_LIMIT = 400;
 
 document.addEventListener("DOMContentLoaded", () => {
     const searchInput = document.getElementById("search");
-    const colFilter = document.getElementById("filterCollezione");
-    const teamFilter = document.getElementById("filterSquadra");
 
-    Papa.parse("catalogo.csv", {
-    download: true,
-    header: true,
-    skipEmptyLines: true,
-    transformHeader: h => h.trim(),
-    complete: function(results) {
-        console.log("CSV caricato:", results.data.length, results.data[0]);
-        data = results.data.filter(r => r.ID);
-        filteredData = data;
-        renderTable(filteredData);
-    },
-    error: function(err) {
-        console.error("ERRORE CSV:", err);
-        alert("CSV non caricato");
-    }
-});
-    function applyFilters() {
-        const search = searchInput.value.toLowerCase().trim();
-        const col = colFilter.value;
-        const team = teamFilter.value;
+    Papa.parse("catalogo.csv?v=" + Date.now(), {
+        download: true,
+        header: true,
+        skipEmptyLines: true,
+        transformHeader: h => h.trim(),
+        complete: function(results) {
+            data = results.data.filter(r => r.ID);
+            filteredData = data;
 
-        filteredData = data.filter(row => {
-            const matchSearch =
-                !search ||
-                (row.Soggetto || "").toLowerCase().includes(search) ||
-                (row.Squadra || "").toLowerCase().includes(search) ||
-                (row.Numero || "").toString().includes(search);
+            buildFilters(data);
+            renderTable(filteredData);
+        },
+        error: function(err) {
+            console.error("ERRORE CSV:", err);
+        }
+    });
 
-            const matchCol = !col || row.Collezione === col;
-            const matchTeam = !team || row.Squadra === team;
+    let timeout;
 
-            return matchSearch && matchCol && matchTeam;
-        });
+    searchInput.addEventListener("input", () => {
+        clearTimeout(timeout);
+        timeout = setTimeout(applyFilters, 120);
+    });
 
-        renderTable(filteredData);
-    }
-
-    searchInput.addEventListener("input", applyFilters);
-    colFilter.addEventListener("change", applyFilters);
-    teamFilter.addEventListener("change", applyFilters);
+    document.getElementById("filterCollezione").addEventListener("change", applyFilters);
+    document.getElementById("filterSquadra").addEventListener("change", applyFilters);
+    document.getElementById("filterTipologia").addEventListener("change", applyFilters);
+    document.getElementById("filterEditore").addEventListener("change", applyFilters);
+    document.getElementById("filterAnno").addEventListener("change", applyFilters);
 });
 
-function populateFilters(data) {
-    const colSet = new Set();
-    const teamSet = new Set();
+function applyFilters() {
+    const search = document.getElementById("search").value.toLowerCase().trim();
 
+    const col = document.getElementById("filterCollezione").value;
+    const team = document.getElementById("filterSquadra").value;
+    const tipo = document.getElementById("filterTipologia").value;
+    const editore = document.getElementById("filterEditore").value;
+    const anno = document.getElementById("filterAnno").value;
+
+    filteredData = data.filter(row => {
+        const matchSearch =
+            !search ||
+            (row.Soggetto || "").toLowerCase().includes(search) ||
+            (row.Squadra || "").toLowerCase().includes(search) ||
+            (row.Collezione || "").toLowerCase().includes(search) ||
+            (row.Numero || "").toString().includes(search);
+
+        return (
+            matchSearch &&
+            (!col || row.Collezione === col) &&
+            (!team || row.Squadra === team) &&
+            (!tipo || row.Tipologia === tipo) &&
+            (!editore || row.Editore === editore) &&
+            (!anno || row.Anno === anno)
+        );
+    });
+
+    renderTable(filteredData);
+}
+
+function buildFilters(data) {
+    fillSelect("filterCollezione", extract(data, "Collezione"));
+    fillSelect("filterSquadra", extract(data, "Squadra"));
+    fillSelect("filterTipologia", extract(data, "Tipologia"));
+    fillSelect("filterEditore", extract(data, "Editore"));
+    fillSelect("filterAnno", extract(data, "Anno"));
+}
+
+function extract(data, key) {
+    const set = new Set();
     data.forEach(r => {
-        if (r.Collezione) colSet.add(r.Collezione);
-        if (r.Squadra) teamSet.add(r.Squadra);
+        if (r[key]) set.add(r[key]);
     });
+    return [...set].sort();
+}
 
-    const colFilter = document.getElementById("filterCollezione");
-    const teamFilter = document.getElementById("filterSquadra");
+function fillSelect(id, values) {
+    const select = document.getElementById(id);
 
-    colSet.forEach(c => {
+    values.forEach(v => {
         const opt = document.createElement("option");
-        opt.value = c;
-        opt.textContent = c;
-        colFilter.appendChild(opt);
-    });
-
-    teamSet.forEach(t => {
-        const opt = document.createElement("option");
-        opt.value = t;
-        opt.textContent = t;
-        teamFilter.appendChild(opt);
+        opt.value = v;
+        opt.textContent = v;
+        select.appendChild(opt);
     });
 }
 
@@ -80,25 +97,33 @@ function renderTable(rows) {
     const tbody = document.querySelector("#table tbody");
     tbody.innerHTML = "";
 
-    rows.slice(0, RENDER_LIMIT).forEach(row => {
+    const slice = rows.slice(0, RENDER_LIMIT);
+
+    const fragment = document.createDocumentFragment();
+
+    for (let i = 0; i < slice.length; i++) {
+        const r = slice[i];
+
         const tr = document.createElement("tr");
 
         tr.innerHTML = `
-            <td>${row.ID || ""}</td>
-            <td>${row.Gruppo || ""}</td>
-            <td>${row.Collezione || ""}</td>
-            <td>${row.Editore || ""}</td>
-            <td>${row.Anno || ""}</td>
-            <td>${row.Tipologia || ""}</td>
-            <td>${row.Numero || ""}</td>
-            <td>${row.Soggetto || ""}</td>
-            <td>${row.Squadra || ""}</td>
-            <td>${row.Rarità || ""}</td>
-            <td>${row.Condizione || ""}</td>
-            <td>${row.Quantità || ""}</td>
-            <td>${row.Note || ""}</td>
+            <td>${r.ID || ""}</td>
+            <td>${r.Gruppo || ""}</td>
+            <td>${r.Collezione || ""}</td>
+            <td>${r.Editore || ""}</td>
+            <td>${r.Anno || ""}</td>
+            <td>${r.Tipologia || ""}</td>
+            <td>${r.Numero || ""}</td>
+            <td>${r.Soggetto || ""}</td>
+            <td>${r.Squadra || ""}</td>
+            <td>${r.Condizione || ""}</td>
+            <td>${r.Quantità || ""}</td>
+            <td>${r.Note || ""}</td>
+            <td>${r.Rarità || ""}</td>
         `;
 
-        tbody.appendChild(tr);
-    });
+        fragment.appendChild(tr);
+    }
+
+    tbody.appendChild(fragment);
 }
