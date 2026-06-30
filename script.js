@@ -8,19 +8,21 @@ document.addEventListener("DOMContentLoaded", () => {
     const teamFilter = document.getElementById("filterSquadra");
 
     Papa.parse("catalogo.csv", {
-        download: true,
-        header: true,
-        skipEmptyLines: true,
-        transformHeader: h => h.trim(),
-        complete: function(results) {
-            data = results.data.filter(r => r.ID);
-            filteredData = data;
-
-            populateFilters(data);
-            renderTable(filteredData);
-        }
-    });
-
+    download: true,
+    header: true,
+    skipEmptyLines: true,
+    transformHeader: h => h.trim(),
+    complete: function(results) {
+        console.log("CSV caricato:", results.data.length, results.data[0]);
+        data = results.data.filter(r => r.ID);
+        filteredData = data;
+        renderTable(filteredData);
+    },
+    error: function(err) {
+        console.error("ERRORE CSV:", err);
+        alert("CSV non caricato");
+    }
+});
     function applyFilters() {
         const search = searchInput.value.toLowerCase().trim();
         const col = colFilter.value;
