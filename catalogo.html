@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalogo Figurine & Card</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Catalogo Figurine & Card</h1>
+</header>
+
+<div class="container">
+
+    <p>
+        <a href="index.html">← Torna alla Home</a>
+    </p>
+
+    <input
+        id="search"
+        placeholder="Cerca soggetto, squadra, numero o collezione..."
+    >
+
+    <div style="display:flex; flex-wrap:wrap; gap:10px; margin:15px 0;">
+
+        <select id="filterCollezione">
+            <option value="">Tutte le collezioni</option>
+        </select>
+
+        <select id="filterSquadra">
+            <option value="">Tutte le squadre</option>
+        </select>
+
+        <select id="filterTipologia">
+            <option value="">Tutte le tipologie</option>
+        </select>
+
+        <select id="filterEditore">
+            <option value="">Tutti gli editori</option>
+        </select>
+
+        <select id="filterAnno">
+            <option value="">Tutti gli anni</option>
+        </select>
+
+    </div>
+
+    <table id="table">
+
+        <thead>
+
+            <tr>
+                <th>ID</th>
+                <th>Gruppo</th>
+                <th>Collezione</th>
+                <th>Editore</th>
+                <th>Anno</th>
+                <th>Tipologia</th>
+                <th>Numero</th>
+                <th>Soggetto</th>
+                <th>Squadra</th>
+                <th>Condizione</th>
+                <th>Quantità</th>
+                <th>Note</th>
+                <th>Rarità</th>
+            </tr>
+
+        </thead>
+
+        <tbody></tbody>
+
+    </table>
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
