@@ -1,96 +1,37 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Figurine Doppie</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figurine & Card</title>
 
-  <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
 <header>
-  <h1>Catalogo Figurine</h1>
+    <h1>Figurine & Card</h1>
+    <p>Benvenuto nel mio catalogo.</p>
 </header>
 
-<div class="container">
+<div class="home">
 
-  <input id="search" placeholder="Cerca soggetto, squadra, numero, collezione..." />
-
-  <div style="display:flex; flex-wrap:wrap; gap:10px; margin: 10px 0;">
-
-    <select id="filterCollezione">
-      <option value="">Tutte le collezioni</option>
-    </select>
-
-    <select id="filterSquadra">
-      <option value="">Tutte le squadre</option>
-    </select>
-
-    <select id="filterTipologia">
-      <option value="">Tutte le tipologie</option>
-    </select>
-
-    <select id="filterEditore">
-      <option value="">Tutti gli editori</option>
-    </select>
-
-    <select id="filterAnno">
-      <option value="">Tutti gli anni</option>
-    </select>
-
-  </div>
-
-  <table id="table">
-    <thead>
-      <tr>
-        <th>ID</th>
-        <th>Gruppo</th>
-        <th>Collezione</th>
-        <th>Editore</th>
-        <th>Anno</th>
-        <th>Tipologia</th>
-        <th>Numero</th>
-        <th>Soggetto</th>
-        <th>Squadra</th>
-        <th>Condizione</th>
-        <th>Quantità</th>
-        <th>Note</th>
-        <th>Rarità</th>
-      </tr>
-    </thead>
-    <tbody></tbody>
-  </table>
-
-  <h2 style="margin-top:40px;">Lotti disponibili di figurine/carte TUTTE DIVERSE</h2>
-
-<table id="lottiTable">
-    <thead>
-        <tr>
-            <th>Collezione</th>
-            <th>Editore</th>
-            <th>Anno</th>
-            <th>Figurine/Carte diverse</th>
-        </tr>
-    </thead>
-
-    <tbody></tbody>
-</table>
-
-
-<div style="text-align:center; margin:40px 0;">
-    <a
-        href="https://www.vinted.it/member/61336852"
-        target="_blank"
-        class="vinted-button">
-        🛍️ Visita il mio profilo Vinted
+    <a class="homeButton" href="lotti.html">
+        📦 Elenco lotti di figurine/card diverse
     </a>
-</div>
-</div>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
-<script src="script.js"></script>
+    <a class="homeButton" href="catalogo.html">
+        📖 Elenco figurine/card
+    </a>
+
+    <a class="homeButton"
+       href="https://www.vinted.it/member/61336852"
+       target="_blank">
+        🛍️ Il mio profilo Vinted
+    </a>
+
+</div>
 
 </body>
 </html>
