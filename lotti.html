@@ -53,6 +53,10 @@
 
 <script>
 
+let lotti = [];
+let sortColumn = "";
+let sortAsc = true;
+
 document.addEventListener("DOMContentLoaded", () => {
 
     Papa.parse("lotti.csv?v=" + Date.now(), {
@@ -64,28 +68,117 @@ document.addEventListener("DOMContentLoaded", () => {
 
         complete: function(results) {
 
-            const tbody = document.querySelector("#lottiTable tbody");
+            lotti = results.data;
 
-            results.data.forEach(row => {
+            renderTable();
 
-                const tr = document.createElement("tr");
-
-                tr.innerHTML = `
-                    <td>${row.Collezione || ""}</td>
-                    <td>${row.Editore || ""}</td>
-                    <td>${row.Anno || ""}</td>
-                    <td style="text-align:center;">${row.Diverse || ""}</td>
-                `;
-
-                tbody.appendChild(tr);
-
-            });
+            enableSorting();
 
         }
 
     });
 
 });
+
+function renderTable() {
+
+    const tbody = document.querySelector("#lottiTable tbody");
+
+    tbody.innerHTML = "";
+
+    lotti.forEach(row => {
+
+        const tr = document.createElement("tr");
+
+        tr.innerHTML = `
+            <td>${row.Collezione || ""}</td>
+            <td>${row.Editore || ""}</td>
+            <td>${row.Anno || ""}</td>
+            <td style="text-align:center;">${row.Diverse || ""}</td>
+        `;
+
+        tbody.appendChild(tr);
+
+    });
+
+}
+
+function enableSorting() {
+
+    const columns = [
+        "Collezione",
+        "Editore",
+        "Anno",
+        "Diverse"
+    ];
+
+    document.querySelectorAll("#lottiTable th").forEach((th, index) => {
+
+        th.addEventListener("click", () => {
+
+            const key = columns[index];
+
+            if (sortColumn === key) {
+                sortAsc = !sortAsc;
+            } else {
+                sortColumn = key;
+                sortAsc = true;
+            }
+
+            lotti.sort((a, b) => {
+
+                let x = a[key] || "";
+                let y = b[key] || "";
+
+                const nx = Number(x);
+                const ny = Number(y);
+
+                if (!isNaN(nx) && !isNaN(ny)) {
+                    return sortAsc ? nx - ny : ny - nx;
+                }
+
+                return sortAsc
+                    ? x.localeCompare(y, "it")
+                    : y.localeCompare(x, "it");
+
+            });
+
+            renderTable();
+
+            updateHeaderIcons();
+
+        });
+
+    });
+
+}
+
+function updateHeaderIcons() {
+
+    const headers = document.querySelectorAll("#lottiTable th");
+
+    headers.forEach(th => {
+
+        th.textContent = th.textContent.replace(" ▲","").replace(" ▼","");
+
+    });
+
+    const columns = [
+        "Collezione",
+        "Anno",
+        "Editore",
+        "Diverse"
+    ];
+
+    const index = columns.indexOf(sortColumn);
+
+    if(index >= 0){
+
+        headers[index].textContent += sortAsc ? " ▲" : " ▼";
+
+    }
+
+}
 
 </script>
 
