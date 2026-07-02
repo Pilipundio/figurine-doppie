@@ -21,6 +21,19 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
+    Papa.parse("lotti.csv?v=" + Date.now(), {
+    download: true,
+    header: true,
+    skipEmptyLines: true,
+    transformHeader: h => h.trim(),
+    complete: function(results) {
+        renderLotti(results.data);
+    },
+    error: function(err) {
+        console.error("Errore caricamento lotti:", err);
+    }
+});
+    
     let timeout;
 
     searchInput.addEventListener("input", () => {
