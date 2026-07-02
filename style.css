@@ -113,3 +113,24 @@ tbody tr td[colspan] {
         font-size: 12px;
     }
 }
+
+#lotti{
+    margin-top:20px;
+}
+
+.vinted-button{
+    display:inline-block;
+    background:#007782;
+    color:white;
+    text-decoration:none;
+    padding:14px 28px;
+    border-radius:10px;
+    font-size:16px;
+    font-weight:600;
+    transition:.2s;
+}
+
+.vinted-button:hover{
+    background:#00636c;
+    transform:translateY(-2px);
+}
