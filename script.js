@@ -186,3 +186,25 @@ function renderTable(rows) {
         tbody.appendChild(tr);
     });
 }
+function renderLotti(rows) {
+
+    const tbody = document.querySelector("#lottiTable tbody");
+
+    tbody.innerHTML = "";
+
+    rows.forEach(row => {
+
+        const tr = document.createElement("tr");
+
+        tr.innerHTML = `
+            <td>${row.Collezione || ""}</td>
+            <td>${row.Anno || ""}</td>
+            <td>${row.Editore || ""}</td>
+            <td style="text-align:center;">${row.Diverse || ""}</td>
+        `;
+
+        tbody.appendChild(tr);
+
+    });
+
+}
