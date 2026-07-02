@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lotti di Figurine & Card DIVERSE</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Lotti di Figurine & Card DIVERSE</h1>
+</header>
+
+<div class="container">
+
+    <p>
+        <a href="index.html">← Torna alla Home</a>
+    </p>
+
+    <table id="lottiTable">
+
+        <thead>
+            <tr>
+                <th>Collezione</th>
+                <th>Editore</th>
+                <th>Anno</th>
+                <th>Figurine/Card diverse</th>
+            </tr>
+        </thead>
+
+        <tbody></tbody>
+
+    </table>
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
+
+<script>
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    Papa.parse("lotti.csv?v=" + Date.now(), {
+
+        download: true,
+        header: true,
+        skipEmptyLines: true,
+        transformHeader: h => h.trim(),
+
+        complete: function(results) {
+
+            const tbody = document.querySelector("#lottiTable tbody");
+
+            results.data.forEach(row => {
+
+                const tr = document.createElement("tr");
+
+                tr.innerHTML = `
+                    <td>${row.Collezione || ""}</td>
+                    <td>${row.Editore || ""}</td>
+                    <td>${row.Anno || ""}</td>
+                    <td style="text-align:center;">${row.Diverse || ""}</td>
+                `;
+
+                tbody.appendChild(tr);
+
+            });
+
+        }
+
+    });
+
+});
+
+</script>
+
+</body>
+</html>
