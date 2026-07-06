@@ -289,8 +289,8 @@ Pan_AXL_Cal_19_0479,AXL,Calciatori Adrenalyn XL 2018-2019,Panini,2019,Card,479,M
 Pan_AXL_Cal_19_0486,AXL,Calciatori Adrenalyn XL 2018-2019,Panini,2019,Card,486,Roberto De Zerbi,Sassuolo,Plus,,1,
 Pan_AXL_Cal_19_0494,AXL,Calciatori Adrenalyn XL 2018-2019,Panini,2019,Card,494,Keita Balde,Inter,Top Plus,,1,
 Pan_AXL_Cal_19_0509,AXL,Calciatori Adrenalyn XL 2018-2019,Panini,2019,Card,509,Calabria / Caldara / Romagnoli / Rodriguez,Milan,Plus,Rovinata,1,
-#N/D
-#N/D
+Pan_AXL_La _19_0267,AXL,La Liga Adrenalyn XL 2018 2019,Panini,2019,Card,267,Pozo,Rayo Vallecano,,,2,
+Pan_AXL_La _19_0269,AXL,La Liga Adrenalyn XL 2018 2019,Panini,2019,Card,269,Alex Alegria,Rayo Vallecano,,,2,
 Pan_AXL_La _19_269bis,AXL,La Liga Adrenalyn XL 2018 2019,Panini,2019,Card,269bis,Di Santo,Rayo Vallecano,Nuevo Fichaje / Actualización,,2,
 Pan_AXL_La _19_0048,AXL,La Liga Adrenalyn XL 2018 2019,Panini,2019,Card,48,Adán,Atlético de Madrid,Base card,,1,
 Pan_AXL_La _19_0053,AXL,La Liga Adrenalyn XL 2018 2019,Panini,2019,Card,53,Kalinic,Atlético de Madrid,Base card,,1,
@@ -3223,190 +3223,190 @@ Pan_CSP_Don_23_0038,CSP,Donruss Elite La Liga 2022-2023,Panini,2023,Card,38,Moi 
 Pan_CSP_Don_23_0024,CSP,Donruss Elite La Liga 2022-2023,Panini,2023,Card,24,Jan Oblak,Atletico Madrid,Base card,,1,
 Pan_CSP_Don_23_0008,CSP,Donruss Elite La Liga 2022-2023,Panini,2023,Card,8,El Bilal Toure,UD Almeria,Base card,,1,
 Pan_CSP_Don_23_0002,CSP,Donruss Elite La Liga 2022-2023,Panini,2023,Card,2,Fernando Martinez,UD Almeria,Base card,,1,
-#N/D
-#N/D
-#N/D
-#N/D
-#N/D
-#N/D
-#N/D
-#N/D
-#N/D
-#N/D
-#N/D
-#N/D
-#N/D
-#N/D
-#N/D
-#N/D
-#N/D
-#N/D
-#N/D
-#N/D
-#N/D
-#N/D
-#N/D
-#N/D
-#N/D
-#N/D
-#N/D
-#N/D
-#N/D
-#N/D
-#N/D
-#N/D
-#N/D
-#N/D
-#N/D
-#N/D
-#N/D
-#N/D
-#N/D
-#N/D
-#N/D
-#N/D
-#N/D
-#N/D
-#N/D
-#N/D
-#N/D
-#N/D
-#N/D
-#N/D
-#N/D
-#N/D
-#N/D
-#N/D
-#N/D
-#N/D
-#N/D
-#N/D
-#N/D
-#N/D
-#N/D
-#N/D
-#N/D
-#N/D
-#N/D
-#N/D
-#N/D
-#N/D
-#N/D
-#N/D
-#N/D
-#N/D
-#N/D
-#N/D
-#N/D
-#N/D
+Top_CHL_UEF_21_REA2,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,REA2,Sergio Ramos,Real Madrid C.F.,Club Hero,,1,
+Top_CHL_UEF_21_REA6,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,REA6,Raphaël Varane,Real Madrid C.F.,Base card,,1,
+Top_CHL_UEF_21_REA13,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,REA13,Isco,Real Madrid C.F.,Base card,,1,
+Top_CHL_UEF_21_REA15,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,REA15,Vinícius Júnior,Real Madrid C.F.,Base card,,2,
+Top_CHL_UEF_21_REA17,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,REA17,Luka Jović,Real Madrid C.F.,Base card,,1,
+Top_CHL_UEF_21_BAR1,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,BAR1,Team Badge,FC Barcelona,Team Badge,,1,
+Top_CHL_UEF_21_BAR3,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,BAR3,Arturo Vidal,FC Barcelona,All Rounder,,1,
+Top_CHL_UEF_21_BAR5,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,BAR5,Clément Lenglet,FC Barcelona,Base card,,1,
+Top_CHL_UEF_21_BAR11,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,BAR11,Frenkie de Jong,FC Barcelona,Base card,,1,
+Top_CHL_UEF_21_BAR18,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,BAR18,Lionel Messi,FC Barcelona,Base card,,1,
+Top_CHL_UEF_21_ATL1,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,ATL1,Team Badge,Atlético de Madrid,Team Badge,,2,
+Top_CHL_UEF_21_ATL3,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,ATL3,Héctor Herrera,Atlético de Madrid,All Rounder,,1,
+Top_CHL_UEF_21_ATL6,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,ATL6,Mario Hermoso,Atlético de Madrid,Base card,,2,
+Top_CHL_UEF_21_ATL7,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,ATL7,Kieran Trippier,Atlético de Madrid,Base card,,1,
+Top_CHL_UEF_21_ATL8,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,ATL8,Stefan Savić,Atlético de Madrid,Base card,,1,
+Top_CHL_UEF_21_ATL11,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,ATL11,Saúl Ñíguez,Atlético de Madrid,Base card,,1,
+Top_CHL_UEF_21_ATL14,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,ATL14,João Félix,Atlético de Madrid,Base card,,2,
+Top_CHL_UEF_21_ATL17,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,ATL17,Felipe,Atlético de Madrid,Base card,,1,
+Top_CHL_UEF_21_LIV2,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,LIV2,Divock Origi,Liverpool FC,Club Hero,,1,
+Top_CHL_UEF_21_LIV4,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,LIV4,Alisson Becker,Liverpool FC,Base card,,1,
+Top_CHL_UEF_21_LIV5,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,LIV5,Andrew Robertson,Liverpool FC,Base card,,1,
+Top_CHL_UEF_21_LIV6,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,LIV6,Trent Alexander-Arnold,Liverpool FC,Base card,,1,
+Top_CHL_UEF_21_LIV12,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,LIV12,Fabinho,Liverpool FC,Base card,,1,
+Top_CHL_UEF_21_LIV18,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,LIV18,Mohamed Salah,Liverpool FC,Base card,,2,
+Top_CHL_UEF_21_MNU1,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,MNU1,Team Badge,Manchester United,Team Badge,,1,
+Top_CHL_UEF_21_MNU5,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,MNU5,Victor Lindelöf,Manchester United,Base card,,1,
+Top_CHL_UEF_21_MNU6,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,MNU6,Aaron Wan-Bissaka,Manchester United,Base card,,1,
+Top_CHL_UEF_21_MNU7,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,MNU7,Luke Shaw,Manchester United,Base card,,1,
+Top_CHL_UEF_21_MNU10,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,MNU10,Fred,Manchester United,Base card,,1,
+Top_CHL_UEF_21_MNU12,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,MNU12,Andreas Pereira,Manchester United,Base card,,1,
+Top_CHL_UEF_21_MNU13,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,MNU13,Nemanja Matić,Manchester United,Base card,,1,
+Top_CHL_UEF_21_MNU14,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,MNU14,Juan Mata,Manchester United,Base card,,1,
+Top_CHL_UEF_21_MCI3,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,MCI3,Phil Foden,Manchester City FC,All Rounder,,1,
+Top_CHL_UEF_21_MCI7,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,MCI7,Benjamin Mendy,Manchester City FC,Base card,,1,
+Top_CHL_UEF_21_MCI15,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,MCI15,Sergio Agüero,Manchester City FC,Base card,,3,
+Top_CHL_UEF_21_CHE2,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,CHE2,César Azpilicueta,Chelsea FC,Club Hero,,2,
+Top_CHL_UEF_21_CHE4,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,CHE4,Kepa Arrizabalaga,Chelsea FC,Base card,,1,
+Top_CHL_UEF_21_CHE5,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,CHE5,Antonio Rüdiger,Chelsea FC,Base card,,1,
+Top_CHL_UEF_21_CHE7,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,CHE7,Kurt Zouma,Chelsea FC,Base card,,1,
+Top_CHL_UEF_21_CHE12,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,CHE12,Ruben Loftus-Cheek,Chelsea FC,Base card,,1,
+Top_CHL_UEF_21_CHE13,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,CHE13,Callum Hudson-Odoi,Chelsea FC,Base card,,1,
+Top_CHL_UEF_21_CHE15,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,CHE15,Timo Werner,Chelsea FC,Base card,,2,
+Top_CHL_UEF_21_CHE17,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,CHE17,Tammy Abraham,Chelsea FC,Base card,,1,
+Top_CHL_UEF_21_LEI3,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,LEI3,Youri Tielemans,Leicester City,All Rounder,,1,
+Top_CHL_UEF_21_LEI14,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,LEI14,Demarai Gray,Leicester City,Base card,,1,
+Top_CHL_UEF_21_LEI15,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,LEI15,James Maddison,Leicester City,Base card,,1,
+Top_CHL_UEF_21_LEI16,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,LEI16,Kelechi Iheanacho,Leicester City,Base card,,1,
+Top_CHL_UEF_21_LEI17,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,LEI17,Ayoze Pérez,Leicester City,Base card,,2,
+Top_CHL_UEF_21_BAY3,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,BAY3,Leon Goretzka,FC Bayern München,All Rounder,,1,
+Top_CHL_UEF_21_BAY8,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,BAY8,Lucas Hernández,FC Bayern München,Base card,,1,
+Top_CHL_UEF_21_BAY10,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,BAY10,Jérôme Boateng,FC Bayern München,Base card,,1,
+Top_CHL_UEF_21_BAY11,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,BAY11,Javi Martínez,FC Bayern München,Base card,,1,
+Top_CHL_UEF_21_BAY16,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,BAY16,Serge Gnabry,FC Bayern München,Base card,,1,
+Top_CHL_UEF_21_BAY18,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,BAY18,Ivan Perišić,FC Bayern München,Base card,,2,
+Top_CHL_UEF_21_DOR4,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,DOR4,Roman Bürki,Borussia Dortmund,Base card,,1,
+Top_CHL_UEF_21_DOR6,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,DOR6,Mats Hummels,Borussia Dortmund,Base card,,2,
+Top_CHL_UEF_21_DOR9,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,DOR9,Łukasz Piszczek,Borussia Dortmund,Base card,,2,
+Top_CHL_UEF_21_DOR16,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,DOR16,Julian Brandt,Borussia Dortmund,Base card,,1,
+Top_CHL_UEF_21_RBL6,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,RBL6,Ibrahima Konaté,RB Leipzig,Base card,,1,
+Top_CHL_UEF_21_RBL9,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,RBL9,Dani Olmo,RB Leipzig,Base card,,1,
+Top_CHL_UEF_21_RBL10,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,RBL10,Emil Forsberg,RB Leipzig,Base card,,1,
+Top_CHL_UEF_21_RBL11,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,RBL11,Lukas Klostermann,RB Leipzig,Base card,,2,
+Top_CHL_UEF_21_RBL14,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,RBL14,Kevin Kampl,RB Leipzig,Base card,,1,
+Top_CHL_UEF_21_RBL15,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,RBL15,Christopher Nkunku,RB Leipzig,Base card,,1,
+Top_CHL_UEF_21_BMG1,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,BMG1,Team Badge,VfL Borussia Mönchengladbach,Team Badge,,1,
+Top_CHL_UEF_21_BMG3,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,BMG3,Florian Neuhaus,VfL Borussia Mönchengladbach,All Rounder,,2,
+Top_CHL_UEF_21_BMG6,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,BMG6,Nico Elvedi,VfL Borussia Mönchengladbach,Base card,,2,
+Top_CHL_UEF_21_BMG8,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,BMG8,Alassane Plea,VfL Borussia Mönchengladbach,Base card,,1,
+Top_CHL_UEF_21_BMG10,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,BMG10,Breel Embolo,VfL Borussia Mönchengladbach,Base card,,4,
+Top_CHL_UEF_21_BMG15,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,BMG15,Christoph Kramer,VfL Borussia Mönchengladbach,Base card,,2,
+Top_CHL_UEF_21_PSG2,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,PSG2,Marquinhos,Paris Saint-Germain,Club Hero,,1,
+Top_CHL_UEF_21_PSG4,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,PSG4,Keylor Navas,Paris Saint-Germain,Base card,,1,
+Top_CHL_UEF_21_PSG7,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,PSG7,Mitchel Bakker,Paris Saint-Germain,Base card,,1,
+Top_CHL_UEF_21_PSG12,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,PSG12,Leandro Paredes,Paris Saint-Germain,Base card,,1,
+Top_CHL_UEF_21_PSG13,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,PSG13,Julian Draxler,Paris Saint-Germain,Base card,,1,
+Top_CHL_UEF_21_PSG17,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,PSG17,Kylian Mbappé,Paris Saint-Germain,Base card,,1,
 Top_CHL_UEF_21_MAR2,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,MAR2,Steve Mandanda,Olympique De Marseille,Base card,,1,
 Top_CHL_UEF_21_MAR4,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,MAR4,Dimitri Payet,Olympique De Marseille,Base card,,3,
 Top_CHL_UEF_21_MAR6,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,MAR6,Duje Ćaleta-Car,Olympique De Marseille,Base card,,2,
 Top_CHL_UEF_21_MAR8,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,MAR8,Morgan Sanson,Olympique De Marseille,Base card,,2,
 Top_CHL_UEF_21_MAR10,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,MAR10,Valère Germain,Olympique De Marseille,Base card,,1,
-#N/D
-#N/D
-#N/D
-#N/D
-#N/D
-#N/D
-#N/D
-#N/D
-#N/D
-#N/D
-#N/D
-#N/D
-#N/D
-#N/D
-#N/D
-#N/D
-#N/D
-#N/D
-#N/D
-#N/D
-#N/D
-#N/D
-#N/D
-#N/D
-#N/D
-#N/D
-#N/D
-#N/D
-#N/D
-#N/D
-#N/D
-#N/D
-#N/D
-#N/D
-#N/D
-#N/D
-#N/D
-#N/D
-#N/D
-#N/D
-#N/D
-#N/D
-#N/D
-#N/D
-#N/D
-#N/D
-#N/D
-#N/D
-#N/D
-#N/D
-#N/D
-#N/D
-#N/D
-#N/D
-#N/D
-#N/D
-#N/D
-#N/D
-#N/D
-#N/D
-#N/D
-#N/D
-#N/D
-#N/D
-#N/D
-#N/D
-#N/D
-#N/D
-#N/D
-#N/D
-#N/D
-#N/D
-#N/D
-#N/D
-#N/D
-#N/D
-#N/D
-#N/D
-#N/D
-#N/D
-#N/D
-#N/D
-#N/D
-#N/D
-#N/D
-#N/D
-#N/D
-#N/D
-#N/D
-#N/D
-#N/D
-#N/D
-#N/D
-#N/D
-#N/D
-#N/D
-#N/D
-#N/D
-#N/D
-#N/D
-#N/D
-#N/D
-#N/D
+Top_CHL_UEF_21_BEN5,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,BEN5,Rúben Dias,SL Benfica,Base card,,2,
+Top_CHL_UEF_21_BEN13,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,BEN13,Jardel,SL Benfica,Base card,,1,
+Top_CHL_UEF_21_BEN14,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,BEN14,Florentino,SL Benfica,Base card,,1,
+Top_CHL_UEF_21_BEN15,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,BEN15,Gabriel,SL Benfica,Base card,,1,
+Top_CHL_UEF_21_BEN18,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,BEN18,Jota,SL Benfica,Base card,,1,
+Top_CHL_UEF_21_ZEN1,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,ZEN1,Team Badge,FC Zenit,Team Badge,,1,
+Top_CHL_UEF_21_ZEN3,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,ZEN3,Douglas Santos,FC Zenit,Base card,,1,
+Top_CHL_UEF_21_ZEN5,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,ZEN5,Artem Dzyuba,FC Zenit,Base card,,1,
+Top_CHL_UEF_21_ZEN8,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,ZEN8,Wílmar Barrios,FC Zenit,Base card,,1,
+Top_CHL_UEF_21_ZEN10,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,ZEN10,Sebastian Driussi,FC Zenit,Base card,,1,
+Top_CHL_UEF_21_BRU2,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,BRU2,Brandon Mechele,Club Brugge,Base card,,2,
+Top_CHL_UEF_21_BRU4,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,BRU4,Ruud Vormer,Club Brugge,Base card,,1,
+Top_CHL_UEF_21_BRU6,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,BRU6,Simon Deli,Club Brugge,Base card,,1,
+Top_CHL_UEF_21_BRU8,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,BRU8,Siebe Schrijvers,Club Brugge,Base card,,1,
+Top_CHL_UEF_21_BRU10,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,BRU10,David Okereke,Club Brugge,Base card,,2,
+Top_CHL_UEF_21_SHA3,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,SHA3,Taras Stepanenko,FC Shakhtar Donetsk,Base card,,1,
+Top_CHL_UEF_21_SHA4,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,SHA4,Yevhen Konoplyanka,FC Shakhtar Donetsk,Base card,,1,
+Top_CHL_UEF_21_SHA8,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,SHA8,Serhiy Kryvtsov,FC Shakhtar Donetsk,Base card,,1,
+Top_CHL_UEF_21_SHA9,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,SHA9,Manor Solomon,FC Shakhtar Donetsk,Base card,,1,
+Top_CHL_UEF_21_IBA1,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,IBA1,Team Badge,İstanbul Başakşehir,Team Badge,,1,
+Top_CHL_UEF_21_IBA2,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,IBA2,Gaël Clichy,İstanbul Başakşehir,Base card,,1,
+Top_CHL_UEF_21_CEL2,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,CEL2,Scott Brown,Celtic FC,Club Hero,,1,
+Top_CHL_UEF_21_CEL4,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,CEL4,Christopher Jullien,Celtic FC,Base card,,3,
+Top_CHL_UEF_21_CEL6,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,CEL6,Callum McGregor,Celtic FC,Base card,,2,
+Top_CHL_UEF_21_CEL10,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,CEL10,Boli Bolingoli,Celtic FC,Base card,,1,
+Top_CHL_UEF_21_CEL12,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,CEL12,Ryan Christie,Celtic FC,Base card,,1,
+Top_CHL_UEF_21_RNG4,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,RNG4,Allan McGregor,Rangers FC,Base card,,3,
+Top_CHL_UEF_21_RNG6,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,RNG6,Scott Arfield,Rangers FC,Base card,,1,
+Top_CHL_UEF_21_RNG8,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,RNG8,Jermain Defoe,Rangers FC,Base card,,1,
+Top_CHL_UEF_21_RNG10,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,RNG10,Ryan Jack,Rangers FC,Base card,,1,
+Top_CHL_UEF_21_RNG12,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,RNG12,Ryan Kent,Rangers FC,Base card,,1,
+Top_CHL_UEF_21_ACM17,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,ACM17,Daniel Maldini,AC Milan,Base card,,1,
+Top_CHL_UEF_21_JUV11,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,JUV11,Juan Cuadrado,Juventus,Base card,,1,
+Top_CHL_UEF_21_INT2,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,INT2,Milan Skriniar,FC Internazionale Milano,Club Hero,,2,
+Top_CHL_UEF_21_INT8,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,INT8,Alessandro Bastoni,FC Internazionale Milano,Base card,,1,
+Top_CHL_UEF_21_ATA5,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,ATA5,Rafael Toloi,Atalanta,Base card,,1,
+Top_CHL_UEF_21_LAZ14,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,LAZ14,Luis Alberto,Lazio,Base card,,1,
+Top_CHL_UEF_21_ROM8,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,ROM8,Federico Fazio,Roma,Base card,,2,
+Top_CHL_UEF_21_ACM7,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,ACM7,Andrea Conti,AC Milan,Base card,,1,
+Top_CHL_UEF_21_NAP9,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,NAP9,Kostas Manolas,Napoli,Base card,,1,
+Top_CHL_UEF_21_T1,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,T1,Agent,Tactic Cards,Tactic Cards,,1,
+Top_CHL_UEF_21_T2,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,T2,Base Card Boost,Tactic Cards,Tactic Cards,,2,
+Top_CHL_UEF_21_T4,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,T4,Injury,Tactic Cards,Tactic Cards,,1,
+Top_CHL_UEF_21_RS1,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,RS1,Ansu Fati,FC Barcelona,Rising Stars,,2,
+Top_CHL_UEF_21_RS2,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,RS2,Rodrygo,Real Madrid C.F.,Rising Stars,,1,
+Top_CHL_UEF_21_RS3,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,RS3,Renan Lodi,Atlético de Madrid,Rising Stars,,2,
+Top_CHL_UEF_21_RS5,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,RS5,Curtis Jones,Liverpool FC,Rising Stars,,1,
+Top_CHL_UEF_21_RS6,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,RS6,Tyler Adams,RB Leipzig,Rising Stars,,2,
+Top_CHL_UEF_21_RS7,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,RS7,Harvey Barnes,Leicester City,Rising Stars,,2,
+Top_CHL_UEF_21_RS8,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,RS8,Reece James,Chelsea FC,Rising Stars,,3,
+Top_CHL_UEF_21_RS9,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,RS9,Mason Greenwood,Manchester United,Rising Stars,,4,
+Top_CHL_UEF_21_RS10,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,RS10,Joshua Zirkzee,FC Bayern München,Rising Stars,,2,
+Top_CHL_UEF_21_RS11,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,RS11,Giovanni Reyna,Borussia Dortmund,Rising Stars,,3,
+Top_CHL_UEF_21_RS12,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,RS12,Colin Dagba,Paris Saint-Germain,Rising Stars,,4,
+Top_CHL_UEF_21_RS14,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,RS14,Lucas Perrin,Olympique De Marseille,Rising Stars,,3,
+Top_CHL_UEF_21_RS15,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,RS15,Jeremie Frimpong,Celtic FC,Rising Stars,,1,
+Top_CHL_UEF_21_RS16,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,RS16,Tetê,FC Shakhtar Donetsk,Rising Stars,,2,
+Top_CHL_UEF_21_SP1,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,SP1,Marc-André ter Stegen,FC Barcelona,Star Players,,1,
+Top_CHL_UEF_21_SP2,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,SP2,Karim Benzema,Real Madrid C.F.,Star Players,,1,
+Top_CHL_UEF_21_SP4,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,SP4,Dimitri Payet,Olympique De Marseille,Star Players,,2,
+Top_CHL_UEF_21_SP5,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,SP5,Mohamed Salah,Liverpool FC,Star Players,,1,
+Top_CHL_UEF_21_SP6,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,SP6,Marcel Sabitzer,RB Leipzig,Star Players,,2,
+Top_CHL_UEF_21_SP7,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,SP7,Wilfred Ndidi,Leicester City,Star Players,,2,
+Top_CHL_UEF_21_SP8,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,SP8,Antonio Rüdiger,Chelsea FC,Star Players,,4,
+Top_CHL_UEF_21_SP10,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,SP10,Serge Gnabry,FC Bayern München,Star Players,,4,
+Top_CHL_UEF_21_SP11,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,SP11,Jadon Sancho,Borussia Dortmund,Star Players,,2,
+Top_CHL_UEF_21_SP12,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,SP12,Neymar Jr,Paris Saint-Germain,Star Players,,2,
+Top_CHL_UEF_21_SP13,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,SP13,Yann Sommer,VfL Borussia Mönchengladbach,Star Players,,1,
+Top_CHL_UEF_21_SP14,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,SP14,Hans Vanaken,Club Brugge,Star Players,,2,
+Top_CHL_UEF_21_SP15,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,SP15,Callum McGregor,Celtic FC,Star Players,,1,
+Top_CHL_UEF_21_SP16,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,SP16,Edin Višća,İstanbul Başakşehir,Star Players,,3,
+Top_CHL_UEF_21_MM3,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,MM3,Vinícius Júnior,Real Madrid C.F.,Man of The Match,,2,
+Top_CHL_UEF_21_MM7,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,MM7,Sadio Mané,Liverpool FC,Man of The Match,,2,
+Top_CHL_UEF_21_MM8,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,MM8,Kasper Schmeichel,Leicester City,Man of The Match,,1,
+Top_CHL_UEF_21_MM9,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,MM9,James Maddison,Leicester City,Man of The Match,,1,
+Top_CHL_UEF_21_MM11,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,MM11,Jorginho,Chelsea FC,Man of The Match,,1,
+Top_CHL_UEF_21_MM12,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,MM12,Harry Maguire,Manchester United,Man of The Match,,3,
+Top_CHL_UEF_21_MM19,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,MM19,Steve Mandanda,Olympique De Marseille,Man of The Match,,1,
+Top_CHL_UEF_21_MM21,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,MM21,Ruud Vormer,Club Brugge,Man of The Match,,2,
+Top_CHL_UEF_21_MM23,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,MM23,Marcel Halstenberg,RB Leipzig,Man of The Match,,1,
+Top_CHL_UEF_21_MM24,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,MM24,Denis Zakaria,VfL Borussia Mönchengladbach,Man of The Match,,2,
+Top_CHL_UEF_21_MM26,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,MM26,Júnior Moraes,FC Shakhtar Donetsk,Man of The Match,,1,
+Top_CHL_UEF_21_MM27,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,MM27,Gaël Clichy,İstanbul Başakşehir,Man of The Match,,1,
+Top_CHL_UEF_21_HT1,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,HT1,Rodrygo,Real Madrid C.F.,Hat Trick Heroes,,2,
+Top_CHL_UEF_21_HT2,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,HT2,Serge Gnabry,FC Bayern München,Hat Trick Heroes,,1,
+Top_CHL_UEF_21_HT3,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,HT3,Robert Lewandowski,FC Bayern München,Hat Trick Heroes,,2,
+Top_CHL_UEF_21_SS1,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,SS1,Clément Lenglet,FC Barcelona,Superstars,,1,
+Top_CHL_UEF_21_SS2,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,SS2,Christian Pulisic,Chelsea FC,Superstars,,1,
+Top_CHL_UEF_21_SS3,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,SS3,Aaron Wan-Bissaka,Manchester United,Superstars,,1,
+Top_CHL_UEF_21_SS4,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,SS4,David Alaba,FC Bayern München,Superstars,,1,
+Top_CHL_UEF_21_SS5,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,SS5,Marquinhos,Paris Saint-Germain,Superstars,,1,
+Top_CHL_UEF_21_SS6,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,SS6,Casemiro,Real Madrid C.F.,Superstars,,1,
+Top_CHL_UEF_21_SS7,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,SS7,Georginio Wijnaldum,Liverpool FC,Superstars,,1,
+Top_CHL_UEF_21_SS8,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,SS8,Dani Olmo,RB Leipzig,Superstars,,1,
+Top_CHL_UEF_21_SS9,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,SS9,Ángel Di María,Paris Saint-Germain,Superstars,,1,
+Top_CHL_UEF_21_SS10,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,SS10,Vinícius Júnior,Real Madrid C.F.,Superstars,,2,
+Top_CHL_UEF_21_SS11,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,SS11,Mohamed Salah,Liverpool FC,Superstars,,1,
+Top_CHL_UEF_21_SS12,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,SS12,Marco Reus,Borussia Dortmund,Superstars,,1,
+Top_CHL_UEF_21_CL3,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,CL3,Virgil van Dijk,Liverpool FC,100 Club,,1,
+Top_CHL_UEF_21_T1F,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,T1F,Agent Card,Tactic Cards,Foil,,1,
+Top_CHL_UEF_21_LE1G,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,LE1G,Roberto Firmino,Liverpool FC,Limited Edition / Gold,,1,
+Top_CHL_UEF_21_LE3B,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,LE3B,Marcus Rashford,Manchester United,Limited Edition / Bronze,,3,
+Top_CHL_UEF_21_LE3S,CHL,UEFA Champions League 2020-2021 Match Attax,Topps,2021,Card,LE3S,Marcus Rashford,Manchester United,Limited Edition / Silver,,2,
 Pan_EUR_UEF_04_0290,EUR,UEFA Euro 2004 Portugal,Panini,2004,Sticker,290,Vratislav Lokvenc,Repubblica Ceca,,,1,
 Pan_EUR_UEF_04_0231,EUR,UEFA Euro 2004 Portugal,Panini,2004,Sticker,231,Simone Perrotta,Italia,,,1,
 Pan_EUR_UEF_04_0218,EUR,UEFA Euro 2004 Portugal,Panini,2004,Sticker,218,Dimitar Ivankov,Bulgaria,,,2,
