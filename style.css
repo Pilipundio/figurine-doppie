@@ -234,11 +234,13 @@ select {
 
 }
 
-select:focus {
+select:focus{
 
-    outline: none;
+    outline:none;
 
-    border-color: #888;
+    border-color:#303030;
+
+    box-shadow:0 0 0 3px rgba(48,48,48,.08);
 
 }
 
@@ -299,11 +301,9 @@ td {
 }
 
 tbody tr:hover{
-
     background:#f3f3f3;
-
+    transform:scale(1.002);
     transition:.15s;
-
 }
 
 /* BOTTONI */
@@ -327,9 +327,8 @@ tbody tr:hover{
 }
 
 .button:hover {
-
-    background: #111;
-
+    background:#111;
+    transform:translateY(-1px);
 }
 
 /* TITOLI */
@@ -468,22 +467,14 @@ html{
 
 }
 
-.requestForm input,
-.requestForm textarea{
+.requestForm input:focus,
+.requestForm textarea:focus{
 
-    width:100%;
+    outline:none;
 
-    padding:14px 16px;
+    border-color:#303030;
 
-    border:1px solid #d9d9d9;
-
-    border-radius:10px;
-
-    font-family:inherit;
-
-    font-size:15px;
-
-    transition:.2s;
+    box-shadow:0 0 0 3px rgba(48,48,48,.08);
 
 }
 
