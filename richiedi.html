@@ -1,30 +1,101 @@
-<main class="container">
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Richiedi figurine - Figurine & Card</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Figurine & Card</h1>
+    <p>Catalogo online di figurine e card disponibili.</p>
+</header>
+
+<nav class="navbar">
+
+    <a href="index.html">🏠 Home</a>
+
+    <a href="catalogo.html">📖 Catalogo</a>
+
+    <a href="lotti.html">📦 Lotti</a>
+
+    <a class="active" href="richiedi.html">📝 Richiedi</a>
+
+    <a href="https://www.vinted.it/member/61336852" target="_blank">
+        🛍️ Vinted
+    </a>
+
+    <a href="come-funziona.html">ℹ️ Come funziona</a>
+
+</nav>
+
+<section class="hero">
 
     <h2>Richiedi figurine</h2>
 
     <p>
-        Compila il modulo indicando la collezione e i numeri delle figurine che stai cercando.
-        Riceverai una risposta con disponibilità e preventivo.
+        Hai trovato le figurine che stavi cercando? Compila il modulo qui sotto.
+        Ti risponderò con disponibilità e preventivo nel più breve tempo possibile.
     </p>
 
-    <form class="requestForm">
+</section>
 
-        <label>Nome</label>
-        <input type="text" placeholder="Il tuo nome">
+<main class="container">
 
-        <label>Email</label>
-        <input type="email" placeholder="nome@email.it">
+    <div class="contentCard">
 
-        <label>Collezione</label>
-        <input type="text" placeholder="Es. Calciatori 2005-2006">
+        <p>
+            <strong>Prima di inviare la richiesta:</strong>
+        </p>
 
-        <label>Numeri richiesti</label>
-        <textarea rows="6" placeholder="Es. 12, 45, 118, 256..."></textarea>
+        <ul>
+            <li>📖 Consulta il catalogo e annota i numeri delle figurine che ti interessano.</li>
+            <li>💰 L'importo minimo dell'ordine è di <strong>5 €</strong> (spese di spedizione escluse).</li>
+            <li>📦 Riceverai un preventivo con disponibilità e prezzo complessivo.</li>
+            <li>🤝 L'invio della richiesta non costituisce un ordine.</li>
+        </ul>
 
-        <button class="button" type="button">
-            Invia richiesta
-        </button>
+        <form class="requestForm">
 
-    </form>
+            <label for="nome">Nome</label>
+            <input id="nome" type="text" placeholder="Il tuo nome">
+
+            <label for="email">Email</label>
+            <input id="email" type="email" placeholder="nome@email.it">
+
+            <label for="collezione">Collezione</label>
+            <input id="collezione" type="text" placeholder="Es. Calciatori 2005-2006">
+
+            <label for="numeri">Numeri richiesti</label>
+            <textarea id="numeri" rows="6" placeholder="Es. 12, 45, 118, 256..."></textarea>
+
+            <button class="button" type="button">
+                📝 Invia richiesta
+            </button>
+
+        </form>
+
+        <p style="text-align:center; margin-top:40px;">
+
+            <a class="button" href="catalogo.html">
+                📖 Torna al Catalogo
+            </a>
+
+        </p>
+
+    </div>
 
 </main>
+
+<footer>
+
+    © 2026 Miyz8 · Catalogo Figurine & Card
+
+</footer>
+
+</body>
+</html>
