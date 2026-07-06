@@ -50,24 +50,35 @@ header p {
     padding: 14px 20px;
 }
 
-.navbar a {
+.navbar a{
 
-    color: #444;
+    color:#555;
 
-    text-decoration: none;
+    text-decoration:none;
 
-    padding: 10px 18px;
+    padding:10px 18px;
 
-    border-radius: 8px;
+    border-radius:8px;
 
-    transition: .2s;
+    font-weight:500;
+
+    transition:.2s;
+
 }
 
-.navbar a:hover {
+.navbar a:hover{
 
-    background: #ececec;
+    background:#ececec;
 
-    color: #000;
+    color:#111;
+
+}
+
+.navbar a.active{
+
+    background:#303030;
+
+    color:white;
 
 }
 
