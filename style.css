@@ -525,3 +525,21 @@ html{
     box-shadow:0 2px 8px rgba(0,0,0,.04);
 
 }
+
+.contentCard ul{
+
+    margin:25px 0 35px;
+
+    padding-left:22px;
+
+    line-height:1.8;
+
+    color:#555;
+
+}
+
+.contentCard li{
+
+    margin-bottom:10px;
+
+}
