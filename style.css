@@ -340,3 +340,41 @@ footer {
     }
 
 }
+
+/* HERO */
+
+.hero{
+
+    max-width:900px;
+
+    margin:40px auto 10px;
+
+    padding:0 20px;
+
+    text-align:center;
+
+}
+
+.hero h2{
+
+    margin:0;
+
+    font-size:32px;
+
+    font-weight:600;
+
+}
+
+.hero p{
+
+    margin:18px auto 0;
+
+    max-width:700px;
+
+    line-height:1.7;
+
+    color:#666;
+
+    font-size:17px;
+
+}
