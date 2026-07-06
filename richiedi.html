@@ -2,6 +2,7 @@
 <html lang="it">
 <head>
     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z7M62WP4X1"></script>
 <script>
@@ -11,7 +12,7 @@
 
   gtag('config', 'G-Z7M62WP4X1');
 </script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
     <title>Richiedi figurine - Figurine & Card</title>
 
     <link rel="stylesheet" href="style.css">
@@ -68,21 +69,28 @@
             <li>🤝 L'invio della richiesta non costituisce un ordine.</li>
         </ul>
 
-        <form class="requestForm">
+        <form class="requestForm" action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="291a72b5-1cdb-4b44-81d2-ce8a763a0f1f">
+
+<input type="hidden" name="subject" value="Nuova richiesta figurine">
+
+<input type="hidden" name="from_name" value="Figurine & Card">
+
+<input type="hidden" name="redirect" value="https://pilipundio.github.io/figurine-doppie/grazie.html">
 
             <label for="nome">Nome</label>
-            <input id="nome" type="text" placeholder="Il tuo nome">
+            <input id="nome" name="nome" type="text" placeholder="Il tuo nome">
 
             <label for="email">Email</label>
-            <input id="email" type="email" placeholder="nome@email.it">
+            <input id="email" name="email" type="email" placeholder="nome@email.it">
 
             <label for="collezione">Collezione</label>
-            <input id="collezione" type="text" placeholder="Es. Calciatori 2005-2006">
+            <input id="collezione" name="collezione" type="text" placeholder="Es. Calciatori 2005-2006">
 
             <label for="numeri">Numeri richiesti</label>
-            <textarea id="numeri" rows="6" placeholder="Es. 12, 45, 118, 256..."></textarea>
+           <textarea id="numeri" name="numeri" rows="6" placeholder="Es. 12, 45, 118, 256..."></textarea>
 
-            <button class="button" type="button">
+            <button class="button" type="submit">
                 📝 Invia richiesta
             </button>
 
