@@ -505,3 +505,23 @@ html{
     box-shadow:0 0 0 3px rgba(48,48,48,.08);
 
 }
+
+/* CONTENT CARD */
+
+.contentCard{
+
+    max-width:900px;
+
+    margin:40px auto;
+
+    padding:40px;
+
+    background:#fff;
+
+    border:1px solid #e5e5e5;
+
+    border-radius:16px;
+
+    box-shadow:0 2px 8px rgba(0,0,0,.04);
+
+}
