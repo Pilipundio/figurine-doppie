@@ -15,11 +15,11 @@ body {
 
 /* HEADER */
 
-header {
-    background: #ffffff;
-    border-bottom: 1px solid #e3e3e3;
-    padding: 28px 20px;
-    text-align: center;
+header{
+    background:#fff;
+    border-bottom:1px solid #e3e3e3;
+    padding:40px 20px;
+    text-align:center;
 }
 
 header h1 {
@@ -38,16 +38,8 @@ header p {
 
 /* NAVBAR */
 
-.navbar {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 12px;
-
-    background: white;
-    border-bottom: 1px solid #e6e6e6;
-
-    padding: 14px 20px;
+.navbar{
+    padding:16px 20px;
 }
 
 .navbar a{
@@ -97,14 +89,8 @@ header p {
 
 /* HOME */
 
-.home {
-
-    display: grid;
-
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-
-    gap: 22px;
-
+.home{
+    margin:40px auto 70px;
 }
 
 .homeButton{
@@ -323,16 +309,13 @@ h2 {
 
 /* FOOTER */
 
-footer {
-
-    text-align: center;
-
-    padding: 40px 20px;
-
-    color: #777;
-
-    font-size: 14px;
-
+footer{
+    border-top:1px solid #e6e6e6;
+    background:#fff;
+    text-align:center;
+    padding:30px 20px;
+    color:#777;
+    font-size:14px;
 }
 
 /* MOBILE */
@@ -369,15 +352,10 @@ footer {
 /* HERO */
 
 .hero{
-
     max-width:900px;
-
-    margin:40px auto 10px;
-
+    margin:60px auto 20px;
     padding:0 20px;
-
     text-align:center;
-
 }
 
 .hero h2{
