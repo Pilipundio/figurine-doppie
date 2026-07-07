@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://pilipundio.github.io/figurine-doppie/sitemap.xml
