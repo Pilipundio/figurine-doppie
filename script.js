@@ -15,6 +15,8 @@ document.addEventListener("DOMContentLoaded", () => {
             data = results.data.filter(r => r.ID);
             filteredData = data;
 
+            updateStats(data);
+            
             buildFilters(data);
             renderTable(filteredData);
             attachSorting();
@@ -206,5 +208,58 @@ function renderLotti(rows) {
         tbody.appendChild(tr);
 
     });
+
+}
+function updateStats(data){
+
+    const stats = document.getElementById("stats");
+
+    if(!stats) return;
+
+    const figurine = data.length;
+
+    const quantita = data.reduce((tot,row)=>{
+
+        return tot + (parseInt(row.Quantità) || 0);
+
+    },0);
+
+    const collezioni = new Set(data.map(r=>r.Collezione).filter(Boolean)).size;
+
+    const anni = data
+        .map(r=>parseInt(r.Anno))
+        .filter(n=>!isNaN(n));
+
+    const annoMin = Math.min(...anni);
+
+    const annoMax = Math.max(...anni);
+
+    stats.innerHTML = `
+
+        <div class="statsGrid">
+
+            <div class="statCard">
+                <div class="statNumber">${figurine.toLocaleString("it-IT")}</div>
+                <div class="statLabel">Figurine diverse</div>
+            </div>
+
+            <div class="statCard">
+                <div class="statNumber">${quantita.toLocaleString("it-IT")}</div>
+                <div class="statLabel">Disponibilità</div>
+            </div>
+
+            <div class="statCard">
+                <div class="statNumber">${collezioni}</div>
+                <div class="statLabel">Collezioni</div>
+            </div>
+
+            <div class="statCard">
+                <div class="statNumber">${annoMin}–${annoMax}</div>
+                <div class="statLabel">Anni</div>
+            </div>
+
+        </div>
+
+    `;
 
 }
