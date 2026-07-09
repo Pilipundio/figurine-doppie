@@ -5,6 +5,8 @@ const RENDER_LIMIT = 400;
 
 document.addEventListener("DOMContentLoaded", () => {
     const searchInput = document.getElementById("search");
+const table = document.getElementById("table");
+const lottiTable = document.getElementById("lottiTable");
 
     Papa.parse("catalogo.csv?v=" + Date.now(), {
         download: true,
@@ -17,9 +19,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
             updateStats(data);
             
-            buildFilters(data);
-            renderTable(filteredData);
-            attachSorting();
+            if (table) {
+    buildFilters(data);
+    renderTable(filteredData);
+    attachSorting();
+}
         }
     });
 
@@ -29,7 +33,9 @@ document.addEventListener("DOMContentLoaded", () => {
     skipEmptyLines: true,
     transformHeader: h => h.trim(),
     complete: function(results) {
-        renderLotti(results.data);
+       if (lottiTable) {
+    renderLotti(results.data);
+}
     },
     error: function(err) {
         console.error("Errore caricamento lotti:", err);
@@ -37,6 +43,10 @@ document.addEventListener("DOMContentLoaded", () => {
 });
     
     let timeout;
+
+    if (searchInput) {
+
+
 
     searchInput.addEventListener("input", () => {
         clearTimeout(timeout);
@@ -48,7 +58,9 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("filterTipologia").addEventListener("change", applyFilters);
     document.getElementById("filterEditore").addEventListener("change", applyFilters);
     document.getElementById("filterAnno").addEventListener("change", applyFilters);
-});
+
+}
+    });
 
 function applyFilters() {
     const search = document.getElementById("search").value.toLowerCase().trim();
