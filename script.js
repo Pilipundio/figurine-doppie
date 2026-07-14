@@ -63,26 +63,26 @@ const lottiTable = document.getElementById("lottiTable");
 }
     });
 function applyCollectionFromUrl() {
+
     const params = new URLSearchParams(window.location.search);
     const collectionName = params.get("collezione");
 
+    /* Nessuna collezione nell'URL: mostra subito tutto il catalogo */
     if (!collectionName) {
+        filteredData = data;
         renderTable(filteredData);
         return;
     }
 
     const collectionFilter = document.getElementById("filterCollezione");
 
-    if (!collectionFilter) {
-        renderTable(filteredData);
-        return;
-    }
-
     const collectionExists = data.some(
         row => row.Collezione === collectionName
     );
 
-    if (!collectionExists) {
+    /* Collezione inesistente: mostra tutto il catalogo */
+    if (!collectionFilter || !collectionExists) {
+        filteredData = data;
         renderTable(filteredData);
         return;
     }
