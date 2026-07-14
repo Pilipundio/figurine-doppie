@@ -2,19 +2,33 @@
 <html lang="it">
 <head>
     <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z7M62WP4X1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  gtag('config', 'G-Z7M62WP4X1');
-</script>
-   
-    <title>Richiedi figurine - Figurine & Card</title>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z7M62WP4X1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
+      gtag('config', 'G-Z7M62WP4X1');
+    </script>
+
+    <title>Richiedi figurine e card disponibili | Figurine & Card</title>
+
+    <meta name="description" content="Invia la lista delle figurine e card calcistiche che stai cercando. Riceverai disponibilità e preventivo per acquisti tramite Vinted, Wallapop o Subito.">
+
+    <meta name="author" content="Miyz8">
+    <meta name="theme-color" content="#303030">
+
+    <meta property="og:title" content="Richiedi figurine e card disponibili">
+    <meta property="og:description" content="Invia la tua lista di figurine mancanti e ricevi disponibilità e preventivo.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://pilipundio.github.io/figurine-doppie/richiedi.html">
+    <meta property="og:site_name" content="Figurine & Card">
+    <meta property="og:locale" content="it_IT">
+
+    <link rel="canonical" href="https://pilipundio.github.io/figurine-doppie/richiedi.html">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -79,16 +93,18 @@
 <input type="hidden" name="redirect" value="https://pilipundio.github.io/figurine-doppie/grazie.html">
 
             <label for="nome">Nome</label>
-            <input id="nome" name="nome" type="text" placeholder="Il tuo nome">
+            <input id="nome" name="nome" type="text" placeholder="Il tuo nome" required>
 
             <label for="email">Email</label>
-            <input id="email" name="email" type="email" placeholder="nome@email.it">
+            <input id="email" name="email" type="email" placeholder="nome@email.it" required>
 
             <label for="collezione">Collezione</label>
-            <input id="collezione" name="collezione" type="text" placeholder="Es. Calciatori 2005-2006">
+            <input id="collezione" name="collezione" type="text"
+       placeholder="Es. Calciatori 2005-2006" required>
 
             <label for="numeri">Numeri richiesti</label>
-           <textarea id="numeri" name="numeri" rows="6" placeholder="Es. 12, 45, 118, 256..."></textarea>
+           <textarea id="numeri" name="numeri" rows="6"
+          placeholder="Es. 12, 45, 118, 256..." required></textarea>
 
             <button class="button" type="submit">
                 📝 Invia richiesta
