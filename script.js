@@ -18,6 +18,7 @@ const lottiTable = document.getElementById("lottiTable");
             filteredData = data;
 
             updateStats(data);
+            renderCollectionLinks(data);
             
             if (table) {
     buildFilters(data);
@@ -321,5 +322,29 @@ function updateStats(data){
         </div>
 
     `;
+    function renderCollectionLinks(data) {
+    const container = document.getElementById("collectionLinks");
+
+    if (!container) return;
+
+    const collections = [...new Set(
+        data
+            .map(row => row.Collezione)
+            .filter(Boolean)
+    )].sort((a, b) => a.localeCompare(b, "it"));
+
+    container.innerHTML = collections
+        .map(collection => {
+            const url =
+                `catalogo.html?collezione=${encodeURIComponent(collection)}`;
+
+            return `
+                <a class="collectionLink" href="${url}">
+                    ${collection}
+                </a>
+            `;
+        })
+        .join("");
+}
 
 }
