@@ -598,3 +598,38 @@ footer {
         font-size: 28px;
     }
 }
+
+.collectionLinksSection {
+    margin-bottom: 36px;
+}
+
+#collectionLinks {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.collectionLink {
+    display: inline-block;
+    padding: 8px 12px;
+
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 999px;
+
+    color: var(--text-soft);
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+
+    transition:
+        color 0.2s,
+        background-color 0.2s,
+        border-color 0.2s;
+}
+
+.collectionLink:hover {
+    color: var(--accent-hover);
+    background: var(--accent-soft);
+    border-color: #D7B98E;
+}
