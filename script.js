@@ -271,41 +271,43 @@ function renderLotti(rows) {
     });
 
 }
-function updateStats(data){
+function updateStats(data) {
 
     const stats = document.getElementById("stats");
 
-    if(!stats) return;
+    if (!stats) return;
 
     const figurine = data.length;
 
-    const quantita = data.reduce((tot,row)=>{
-
+    const quantita = data.reduce((tot, row) => {
         return tot + (parseInt(row.Quantità) || 0);
+    }, 0);
 
-    },0);
-
-    const collezioni = new Set(data.map(r=>r.Collezione).filter(Boolean)).size;
+    const collezioni = new Set(
+        data.map(row => row.Collezione).filter(Boolean)
+    ).size;
 
     const anni = data
-        .map(r=>parseInt(r.Anno))
-        .filter(n=>!isNaN(n));
+        .map(row => parseInt(row.Anno))
+        .filter(anno => !isNaN(anno));
 
     const annoMin = Math.min(...anni);
-
     const annoMax = Math.max(...anni);
 
     stats.innerHTML = `
-
         <div class="statsGrid">
 
             <div class="statCard">
-                <div class="statNumber">${figurine.toLocaleString("it-IT")}</div>
+                <div class="statNumber">
+                    ${figurine.toLocaleString("it-IT")}
+                </div>
                 <div class="statLabel">Figurine diverse</div>
             </div>
 
             <div class="statCard">
-                <div class="statNumber">${quantita.toLocaleString("it-IT")}</div>
+                <div class="statNumber">
+                    ${quantita.toLocaleString("it-IT")}
+                </div>
                 <div class="statLabel">Disponibilità</div>
             </div>
 
@@ -320,21 +322,26 @@ function updateStats(data){
             </div>
 
         </div>
-
     `;
-    function renderCollectionLinks(data) {
+}
+
+function renderCollectionLinks(data) {
+
     const container = document.getElementById("collectionLinks");
 
     if (!container) return;
 
-    const collections = [...new Set(
-        data
-            .map(row => row.Collezione)
-            .filter(Boolean)
-    )].sort((a, b) => a.localeCompare(b, "it"));
+    const collections = [
+        ...new Set(
+            data
+                .map(row => row.Collezione)
+                .filter(Boolean)
+        )
+    ].sort((a, b) => a.localeCompare(b, "it"));
 
     container.innerHTML = collections
         .map(collection => {
+
             const url =
                 `catalogo.html?collezione=${encodeURIComponent(collection)}`;
 
@@ -345,6 +352,4 @@ function updateStats(data){
             `;
         })
         .join("");
-}
-
 }
