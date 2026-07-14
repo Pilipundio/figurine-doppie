@@ -21,7 +21,7 @@ const lottiTable = document.getElementById("lottiTable");
             
             if (table) {
     buildFilters(data);
-    renderTable(filteredData);
+    applyCollectionFromUrl();
     attachSorting();
 }
         }
@@ -61,6 +61,54 @@ const lottiTable = document.getElementById("lottiTable");
 
 }
     });
+function applyCollectionFromUrl() {
+    const params = new URLSearchParams(window.location.search);
+    const collectionName = params.get("collezione");
+
+    if (!collectionName) {
+        renderTable(filteredData);
+        return;
+    }
+
+    const collectionFilter = document.getElementById("filterCollezione");
+
+    if (!collectionFilter) {
+        renderTable(filteredData);
+        return;
+    }
+
+    const collectionExists = data.some(
+        row => row.Collezione === collectionName
+    );
+
+    if (!collectionExists) {
+        renderTable(filteredData);
+        return;
+    }
+
+    collectionFilter.value = collectionName;
+
+    filteredData = data.filter(
+        row => row.Collezione === collectionName
+    );
+
+    renderTable(filteredData);
+
+    const heroTitle = document.querySelector(".hero h2");
+    const heroText = document.querySelector(".hero p");
+
+    if (heroTitle) {
+        heroTitle.textContent = collectionName;
+    }
+
+    if (heroText) {
+        heroText.textContent =
+            `Consulta tutte le figurine e card disponibili della collezione ${collectionName}.`;
+    }
+
+    document.title =
+        `${collectionName} - Figurine disponibili | Figurine & Card`;
+}
 
 function applyFilters() {
     const search = document.getElementById("search").value.toLowerCase().trim();
